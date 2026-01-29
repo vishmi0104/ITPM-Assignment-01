@@ -1,10 +1,12 @@
 const { test, expect } = require('@playwright/test');
 
-test('Singlish to Sinhala conversion works', async ({ page }) => {
-  await page.goto('https://www.swifttranslator.com/');
+test('Convert Singlish text to Sinhala successfully', async ({ page }) => {
+  // Navigate to translator site
+  await page.goto('https://www.swifttranslator.com/', { waitUntil: 'networkidle' });
 
   // Input text box
   const inputBox = page.getByRole('textbox').first();
+  await inputBox.click();
   await inputBox.fill('oyaata kohomada?');
 
   // Output translation box
@@ -12,12 +14,15 @@ test('Singlish to Sinhala conversion works', async ({ page }) => {
     '.w-full.h-80.p-3.rounded-lg.ring-1.ring-slate-300.whitespace-pre-wrap'
   );
 
-  // Wait for translation result
-  await expect(outputBox).toHaveText(/.+/, { timeout: 30000 });
+  // Wait until translation appears
+  await expect(outputBox).not.toBeEmpty({ timeout: 30000 });
 
   const output = (await outputBox.innerText()).trim();
   console.log('Translated Output:', output);
 
-  // Assertion
-  expect(output).toContain('ඔයා');
+  // Assertion with meaningful expectation
+  expect(output).toContain(
+    'ඔයා',
+    'Expected Sinhala translation to contain "ඔයා"'
+  );
 });
