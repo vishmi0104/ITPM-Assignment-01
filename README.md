@@ -41,26 +41,29 @@ All test cases were independently designed and implemented according to the assi
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
+```text
 IT23637078/
-└── ITPM-Assignment-01/
-├── .git/
-├── data/
-│ └── IT23637078 all passed.png
 │
-├── tests/
-│ ├── swifttranslator_excel.spec.js
-│ └── swifttranslator_hardcoded_all.spec.js
-│
-├── .gitignore
-├── Git repo link - IT23637078.txt
-├── IT3040_Assignment1_TestCases.xlsx
-├── README.md
-├── package.json
-├── package-lock.json
-└── playwright.config.js
-
+├── ITPM-Assignment-01/
+│   │
+│   ├── .git/
+│   │
+│   ├── data/
+│   │   └── IT23637078 all passed.png     # Test execution screenshot
+│   │
+│   ├── tests/
+│   │   ├── swifttranslator_excel.spec.js
+│   │   └── swifttranslator_hardcoded_all.spec.js
+│   │
+│   ├── .gitignore
+│   ├── Git repo link - IT23637078.txt
+│   ├── IT3040_Assignment1_TestCases.xlsx
+│   ├── README.md
+│   ├── package.json
+│   ├── package-lock.json
+│   └── playwright.config.js
 
 ---
 
