@@ -129,12 +129,12 @@ Run Tests with Visible Browser (Headed Mode)
 
 Watch the tests execute in real-time:
 
-npx playwright test tests/all.spec.js --project=chromium --headed
+npx playwright test tests/swifttranslator_hardcoded_all.spec.js --project=chromium --headed
 Run Specific Test File
 
 Run only a particular test file:
 
-npx playwright test tests/all.spec.js
+npx playwright test tests/swifttranslator_hardcoded_all.spec.js
 Run Tests in Debug Mode
 
 Step through tests using Playwright Inspector:
@@ -206,15 +206,15 @@ IT3040_Assignment1_TestCases.xlsx
 
 This Excel file contains:
 
-Test case IDs
+**Test case IDs
 
-Test case descriptions
+**Test case descriptions
 
-Expected results
+**Expected results
 
-Test data
+**Test data
 
-Priority levels
+**Priority levels
 
 🔗 Additional Resources
 
