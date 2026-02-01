@@ -1,30 +1,41 @@
-# ITPM Assignment 01 – Playwright Automation
-
-## Student Details
-- Registration Number: IT23637078
-- Module: ITPM
-- Assignment: 01
+# ITPM Assignment 1 – Playwright Automation
 
 ---
 
-## Project Overview
-This project contains automated end-to-end tests for the **SwiftTranslator** web application using **Playwright (JavaScript)**.
-
-The assignment includes:
-1. **Excel-based (data-driven) automation** – test cases are read directly from the completed Excel file.
-2. **Hard-coded automation (backup)** – all test case details are written directly inside the Playwright script to ensure tests can run even if Excel access is unavailable.
-
-Both approaches are provided to ensure **reliability and ease of marking**.
+## 📌 Project Overview
+This repository contains automated functional test cases developed using **Playwright (JavaScript)** for a **Singlish → Sinhala** transliteration web application. The automation was implemented as part of **ITPM Assignment 1**.
 
 ---
 
-## Technologies Used
-- Node.js
-- Playwright
-- JavaScript
-- XLSX (for Excel-based test execution)
+## ✅ Test Coverage
+- **29 Positive Functional Test Cases** – Validating expected behavior and successful scenarios  
+- **10 Negative Functional Test Cases** – Testing error handling and edge cases  
+- **1 UI Test Case** – Verifying user interface elements and layout  
+
+All test cases were independently designed and implemented according to the assignment requirements.
 
 ---
 
-## Project Structure
+## 🧪 Application Under Test
+
+| Property | Details |
+|--------|---------|
+| Application Name | SwiftTranslator |
+| Website URL | https://www.swifttranslator.com/ |
+| Input Language | Singlish |
+| Output Language | Sinhala |
+| Type | Real-time transliteration (no convert button required) |
+
+---
+
+## 🛠️ Technologies & Tools
+- **Test Framework:** Playwright (JavaScript)  
+- **IDE:** Visual Studio Code  
+- **Browser:** Chromium (via Playwright)  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 📂 Project Structure
+
 
